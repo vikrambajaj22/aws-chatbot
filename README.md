@@ -5,4 +5,4 @@ A chatbot using AWS services including S3, Cognito, API Gateway and Lambda.
 
 <b>S3 Bucket Link</b>: https://s3.console.aws.amazon.com/s3/buckets/vilshibi-cloudbot/?region=us-east-1&tab=overview
 
-<b>Link to chat page in S3 bucket</b>: https://s3.amazonaws.com/vilshibi-cloudbot/chat.html
+<b>Link to chat page in the S3 bucket</b>: https://s3.amazonaws.com/vilshibi-cloudbot/chat.html
