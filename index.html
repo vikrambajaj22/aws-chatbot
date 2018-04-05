@@ -1,0 +1,201 @@
+<!-- Author: Vikram Sunil Bajaj -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cloud Bot</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Tab Color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#263238">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#263238">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <style>
+        .brand-logo:hover {
+            color: #FF7043;
+        }
+
+        .nav-wrapper a img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        .card-image {
+            height: 100px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- navbar -->
+    <header>
+        <nav>
+            <div class="nav-wrapper" style="background: #263238;">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                <a href="index.html" class="brand-logo center">Cloud Bot</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light btn" href="https://vilshibi-chatbot.auth.us-east-1.amazoncognito.com/login?redirect_uri=https://s3.amazonaws.com/vilshibi-cloudbot/chat.html&response_type=code&client_id=49lanvj3kl3jae2opv9npgbpj0">Sign Up/Log In</a></li>
+                    <!--<li><a class="waves-effect waves-light btn" href="login.html">Log In</a></li>-->
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a class="waves-effect waves-light btn" href="https://vilshibi-chatbot.auth.us-east-1.amazoncognito.com/login?redirect_uri=https://s3.amazonaws.com/vilshibi-cloudbot/chat.html&response_type=code&client_id=49lanvj3kl3jae2opv9npgbpj0">Sign Up/Log In</a></li>
+                    <!--<li><a class="waves-effect waves-light btn" href="login.html">Log In</a></li>-->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main style="background: #37474F;">
+        <div id=" about " class="col s12 " style="background: #37474F;">
+            <!-- Row 1 -->
+            <div class="row ">
+                <!-- Card 1 -->
+                <div class="col s12 m4 l4 push-m2 push-l2 ">
+                    <div class="card hoverable " style="background: #263238; ">
+                        <div class="card-content ">
+                            <!--<span class="card-title " stye="color: #FFFFFF; ">Card Title</span>-->
+                            <h5 style="color: #FFFFFF; ">The Project</h5>
+                            <p style="color: #FFFFFF; ">A chatbot using AWS services including S3, Cognito, API Gateway, Lex and Lambda.</p>
+                        </div>
+                        <div class="card-action " style="color: #FFFFFF; ">
+                            <a href="https://github.com/vikrambajaj22/aws-chatbot" target="_blank" style="color: #FF7043; ">View On GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col s12 m4 l4 push-m2 push-l2 ">
+                    <div class="card hoverable " style="background: #263238; ">
+                        <div class="card-content ">
+                            <!--<span class="card-title " stye="color: #FFFFFF; ">Card Title</span>-->
+                            <h5 style="color: #FFFFFF; ">Team Members</h5>
+                            <div class="card horizontal hoverable " style="background: #37474F; ">
+                                <div class="card-image ">
+                                    <a href="http://www.vikrambajaj.me" target="_blank"><img src="images/vikrambajaj.jpg"></a>
+                                </div>
+                                <div class="card-stacked ">
+                                    <div class="card-content ">
+                                        <p style="color: #FFFFFF; ">Vikram Sunil Bajaj (vsb259)</p>
+                                    </div>
+                                    <div class="card-action ">
+                                        <a href="https://www.linkedin.com/in/vikrambajaj22/" target="_blank" style="color: #FF7043; ">Connect on LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card horizontal hoverable " style="background: #37474F; ">
+                                <div class="card-image ">
+                                    <img src="images/ilyashabeeb.jpg">
+                                </div>
+                                <div class="card-stacked ">
+                                    <div class="card-content ">
+                                        <p style="color: #FFFFFF; ">Ilyas Habeeb (mih278)</p>
+                                    </div>
+                                    <div class="card-action ">
+                                        <a href="https://www.linkedin.com/in/ilyas-habeeb/" target="_blank" style="color: #FF7043; ">Connect on LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card horizontal hoverable " style="background: #37474F; ">
+                                <div class="card-image ">
+                                    <img src="images/shivanipayal.jpg">
+                                </div>
+                                <div class="card-stacked ">
+                                    <div class="card-content ">
+                                        <p style="color: #FFFFFF; ">Shivani Payal (smp765)</p>
+                                    </div>
+                                    <div class="card-action ">
+                                        <a href="https://www.linkedin.com/in/shivanipayal/" target="_blank" style="color: #FF7043; ">Connect on LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card horizontal hoverable " style="background: #37474F; ">
+                                <div class="card-image ">
+                                    <img src="images/binalmodi.jpg">
+                                </div>
+                                <div class="card-stacked ">
+                                    <div class="card-content ">
+                                        <p style="color: #FFFFFF; ">Binal Modi (bjm470)</p>
+                                    </div>
+                                    <div class="card-action ">
+                                        <a href="https://www.linkedin.com/in/binalmodi/" target="_blank" style="color: #FF7043; ">Connect on LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="page-footer " style="background-color: #263238; margin: 0; ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col l6 s12 m6 push-l3 push-m3 ">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright ">
+            <div class="container ">
+                <br>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $(".button-collapse ").sideNav({
+                menuWidth: 240,
+                edge: 'right',
+                closeOnClick: true
+            });
+        });
+
+    </script>
+</body>
+
+</html>
